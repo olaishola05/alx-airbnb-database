@@ -5,9 +5,7 @@
 A database schema is in Third Normal Form (3NF) if:
 
 - It is in Second Normal Form (2NF):
-
 - No partial dependencies (non-prime attributes depend on the whole primary key).
-
 - It has no transitive dependencies:
   - Non-key attributes depend only on the primary key, not on other non-key attributes.
 

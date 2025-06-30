@@ -4,6 +4,7 @@ INNER JOIN users AS u ON bks.user_id = u.user_id
 
 SELECT * FROM properties AS p
 LEFT JOIN reviews AS r ON p.property_id = r.property_id
+ORDER BY p.name, r.rating DESC;
 
 
 SELECT * 

@@ -4,7 +4,7 @@ WHERE p.property_id IN (
     SELECT property_id
     FROM reviews
     GROUP By property_id
-    HAVING AVG(rating)  > 4
+    HAVING AVG(rating)  > 4.0
 )
 
 SELECT * 

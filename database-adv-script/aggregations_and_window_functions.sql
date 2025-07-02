@@ -17,5 +17,6 @@ SELECT
   property_id,
   name,
   total_number_bookings,
-  ROW_NUMBER() OVER (ORDER BY total_number_bookings DESC) as RankByBookings
+  ROW_NUMBER() OVER (ORDER BY total_number_bookings DESC) as RowNumberByBookings,
+  RANK() OVER (ORDER BY total_number_bookings DESC) AS RankByBookings
 FROM PropertyBookings
